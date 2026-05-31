@@ -154,16 +154,10 @@ export default function Index() {
             {/* Logo */}
             <button onClick={() => navigate("home")} className="flex items-center gap-4 group">
               <img
-                src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/daca48a2-d9f2-4fbb-84f4-2e69484f0ae4.jpg"
+                src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/d0b2598a-b0e6-4360-b683-4b7f3c8c4443.png"
                 alt="СПТЛ"
-                className="h-12 w-12 object-contain"
+                className="h-12 w-auto object-contain"
               />
-              <div className="hidden sm:block">
-                <div className="font-oswald font-semibold text-xl text-sptl-dark tracking-widest leading-none">СПТЛ</div>
-                <div className="text-[10px] text-gray-500 tracking-wider font-ibm font-light leading-tight mt-0.5">
-                  САНКТ-ПЕТЕРБУРГСКАЯ<br />ТАНЦЕВАЛЬНАЯ ЛИГА
-                </div>
-              </div>
             </button>
 
             {/* Desktop Nav */}
@@ -245,9 +239,9 @@ export default function Index() {
 
               <div className="absolute right-8 top-1/2 -translate-y-1/2 opacity-8 hidden xl:block">
                 <img
-                  src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/daca48a2-d9f2-4fbb-84f4-2e69484f0ae4.jpg"
+                  src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/d0b2598a-b0e6-4360-b683-4b7f3c8c4443.png"
                   alt=""
-                  className="w-72 h-72 object-contain filter invert opacity-10"
+                  className="w-96 h-32 object-contain filter invert opacity-10"
                 />
               </div>
             </section>
@@ -763,14 +757,10 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <img
-                src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/daca48a2-d9f2-4fbb-84f4-2e69484f0ae4.jpg"
+                src="https://cdn.poehali.dev/projects/f401a539-cf32-4ac0-b4b5-972c26c82b1e/bucket/d0b2598a-b0e6-4360-b683-4b7f3c8c4443.png"
                 alt="СПТЛ"
-                className="h-8 w-8 object-contain"
+                className="h-10 w-auto object-contain brightness-0 invert"
               />
-              <div>
-                <div className="font-oswald text-white text-sm tracking-widest">СПТЛ</div>
-                <div className="font-ibm text-gray-500 text-xs">Санкт-Петербургская Танцевальная Лига</div>
-              </div>
             </div>
             <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
               {NAV_ITEMS.map(item => (
