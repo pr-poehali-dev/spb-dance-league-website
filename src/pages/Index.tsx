@@ -223,7 +223,7 @@ export default function Index() {
               <div className="max-w-7xl mx-auto px-4 md:px-8 py-20 relative z-10">
                 <div className="max-w-2xl">
                   <div className="font-oswald text-sptl-red text-xs tracking-[0.3em] mb-4 animate-fade-in">
-                    ОСНОВАНА В 2001 ГОДУ · САНКТ-ПЕТЕРБУРГ
+                    ОСНОВАНА В 2025 ГОДУ · САНКТ-ПЕТЕРБУРГ
                   </div>
                   <h1 className="font-oswald text-5xl md:text-7xl font-bold text-white leading-none tracking-wide mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                     ТАНЦЕВАЛЬНАЯ<br />
@@ -257,7 +257,7 @@ export default function Index() {
               <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
                   {[
-                    { num: "25+", label: "Лет деятельности" },
+                    { num: "1", label: "Год деятельности" },
                     { num: "6", label: "Клубов в составе" },
                     { num: "730+", label: "Спортсменов" },
                     { num: "12", label: "Турниров в год" },
@@ -337,7 +337,7 @@ export default function Index() {
               <div>
                 <h3 className="font-oswald text-lg font-semibold text-sptl-dark tracking-wide mb-3 uppercase">История</h3>
                 <p className="font-ibm text-gray-600 text-sm leading-relaxed mb-4">
-                  Санкт-Петербургская Танцевальная Лига основана в 2001 году группой ведущих педагогов и руководителей танцевальных клубов города. За более чем два десятилетия лига стала ведущей организацией в сфере спортивных бальных танцев Северо-Западного региона России.
+                  Санкт-Петербургская Танцевальная Лига основана в 2025 году группой ведущих педагогов и руководителей танцевальных клубов города. За более чем два десятилетия лига стала ведущей организацией в сфере спортивных бальных танцев Северо-Западного региона России.
                 </p>
                 <p className="font-ibm text-gray-600 text-sm leading-relaxed">
                   Лига является членом Всероссийской Федерации Танцевального Спорта и ведёт активную работу по развитию танцевального спорта, подготовке судей и организации соревновательной деятельности.
@@ -781,7 +781,7 @@ export default function Index() {
               ))}
             </div>
             <div className="font-ibm text-xs text-gray-600 text-center md:text-right">
-              © 2001–2026 СПТЛ<br />Все права защищены
+              © 2025–2026 СПТЛ<br />Все права защищены
             </div>
           </div>
         </div>
