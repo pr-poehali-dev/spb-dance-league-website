@@ -254,7 +254,7 @@ export default function Index() {
                     { num: "1", label: "Год деятельности" },
                     { num: "6", label: "Клубов в составе" },
                     { num: "730+", label: "Спортсменов" },
-                    { num: "12", label: "Турниров в год" },
+                    { num: "11", label: "Турниров в год" },
                   ].map((s, i) => (
                     <div key={i} className="py-8 px-6 text-center">
                       <div className="font-oswald text-4xl font-bold text-sptl-red mb-1">{s.num}</div>
