@@ -252,7 +252,7 @@ export default function Index() {
                 <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
                   {[
                     { num: "1", label: "Год деятельности" },
-                    { num: "6", label: "Клубов в составе" },
+                    { num: "20", label: "Клубов в составе" },
                     { num: "610", label: "Спортсменов" },
                     { num: "11", label: "Турниров в год" },
                   ].map((s, i) => (
