@@ -214,11 +214,11 @@ export default function Index() {
         {active === "home" && (
           <div>
             {/* Hero */}
-            <section className="relative bg-sptl-dark min-h-[520px] flex items-center overflow-hidden">
+            <section className="relative min-h-[520px] flex items-center overflow-hidden"
+              style={{ background: "linear-gradient(120deg, #111111 0%, #C0202A 55%, #f5f0ee 100%)" }}>
               <div className="absolute inset-0 opacity-5"
                 style={{ backgroundImage: "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "20px 20px" }}
               />
-              <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-sptl-red/15 to-transparent" />
 
               <div className="max-w-7xl mx-auto px-4 md:px-8 py-20 relative z-10">
                 <div className="max-w-2xl">
