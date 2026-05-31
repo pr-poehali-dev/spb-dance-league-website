@@ -60,20 +60,28 @@ const CLUBS: Club[] = [
 ];
 
 const EVENTS: Event[] = [
-  { id: 1, title: "Кубок Санкт-Петербурга 2026", date: "14 июня 2026", location: "ДК им. Горького", status: "upcoming", type: "Турнир" },
-  { id: 2, title: "Открытый чемпионат СПТЛ", date: "28 июня 2026", location: "Ледовый дворец", status: "upcoming", type: "Чемпионат" },
-  { id: 3, title: "Летние встречи", date: "12 июля 2026", location: "Таврический дворец", status: "upcoming", type: "Фестиваль" },
-  { id: 4, title: "Весенний кубок 2026", date: "18 апреля 2026", location: "ДК Выборгский", status: "past", type: "Турнир" },
-  { id: 5, title: "Зимний фестиваль танца", date: "25 февраля 2026", location: "Зал Октябрьский", status: "past", type: "Фестиваль" },
+  { id: 1, title: "Кубок Лиги", date: "27 сентября 2026", location: "", status: "upcoming", type: "Турнир" },
+  { id: 2, title: "Балтийская Звезда", date: "11 октября 2026", location: "", status: "upcoming", type: "Турнир" },
+  { id: 3, title: "Северный Кубок", date: "8 ноября 2026", location: "", status: "upcoming", type: "Турнир" },
+  { id: 4, title: "Большой Кубок Содружества", date: "29 ноября 2026", location: "", status: "upcoming", type: "Турнир" },
+  { id: 5, title: "Кубок Петербурга", date: "20 декабря 2026", location: "", status: "upcoming", type: "Турнир" },
+  { id: 6, title: "Тиара", date: "7 февраля 2027", location: "", status: "upcoming", type: "Турнир" },
+  { id: 7, title: "Первенство Танцевальной Лиги Санкт-Петербурга", date: "23 февраля 2027", location: "", status: "upcoming", type: "Первенство" },
+  { id: 8, title: "Амбассадор", date: "7 марта 2027", location: "", status: "upcoming", type: "Турнир" },
+  { id: 9, title: "Кубок Русского Стиля", date: "4 апреля 2027", location: "", status: "upcoming", type: "Турнир" },
+  { id: 10, title: "Карнавал", date: "18 апреля 2027", location: "", status: "upcoming", type: "Турнир" },
+  { id: 11, title: "Чемпионат Танцевальной Лиги Санкт-Петербурга", date: "23 мая 2027", location: "", status: "upcoming", type: "Чемпионат" },
 ];
 
 const SCHEDULE = [
-  { month: "Июнь 2026", events: ["14.06 — Кубок Санкт-Петербурга", "28.06 — Открытый чемпионат СПТЛ"] },
-  { month: "Июль 2026", events: ["12.07 — Летние встречи (Фестиваль)", "19.07 — Турнир молодёжи"] },
-  { month: "Август 2026", events: ["09.08 — Летний кубок", "23.08 — Открытые старты СПТЛ"] },
-  { month: "Сентябрь 2026", events: ["06.09 — Кубок открытия сезона", "20.09 — Чемпионат лиги (1 этап)"] },
-  { month: "Октябрь 2026", events: ["11.10 — Кубок осени", "25.10 — Чемпионат лиги (2 этап)"] },
-  { month: "Ноябрь 2026", events: ["08.11 — Гран-при СПТЛ", "22.11 — Финал чемпионата лиги"] },
+  { month: "Сентябрь 2026", events: ["27.09 — Кубок Лиги"] },
+  { month: "Октябрь 2026", events: ["11.10 — Балтийская Звезда"] },
+  { month: "Ноябрь 2026", events: ["08.11 — Северный Кубок", "29.11 — Большой Кубок Содружества"] },
+  { month: "Декабрь 2026", events: ["20.12 — Кубок Петербурга"] },
+  { month: "Февраль 2027", events: ["07.02 — Тиара", "23.02 — Первенство Танцевальной Лиги Санкт-Петербурга"] },
+  { month: "Март 2027", events: ["07.03 — Амбассадор"] },
+  { month: "Апрель 2027", events: ["04.04 — Кубок Русского Стиля", "18.04 — Карнавал"] },
+  { month: "Май 2027", events: ["23.05 — Чемпионат Танцевальной Лиги Санкт-Петербурга"] },
 ];
 
 const DOCUMENTS: Document[] = [
@@ -301,7 +309,7 @@ export default function Index() {
                   </button>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-700">
-                  {EVENTS.filter(e => e.status === "upcoming").map(ev => (
+                  {EVENTS.filter(e => e.status === "upcoming").slice(0, 3).map(ev => (
                     <div key={ev.id} className="bg-sptl-dark p-6 border-t-2 border-transparent hover:border-sptl-red transition-colors">
                       <div className="font-oswald text-sptl-red text-xs tracking-widest mb-3">{ev.type.toUpperCase()}</div>
                       <div className="font-oswald text-white text-lg mb-2 leading-snug">{ev.title}</div>
